@@ -1,0 +1,146 @@
+/*rest.css*/
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov.min.css");
+*{
+   font-family: "Pretendard GOV", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-style: normal;
+margin:0;padding:0;
+    box-sizing: border-box;
+}
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+details,
+menu,
+figure,
+figcaption,
+summary,
+canvas {
+    display: block;
+}
+
+html {
+    letter-spacing: normal;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    word-break: break-all;
+    overflow-x: hidden;
+    position: relative;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -webkit-text-size-adjust:100%;
+    margin:0;
+}
+.wrapper,
+.sub-cont-body,
+main {
+    flex: 1 0 auto;
+}
+.footer {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+div,
+p,
+ol,
+ul,
+li,
+img,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+span,
+iframe,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+table,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+pre {
+    white-space: break-spaces;
+    margin: 0;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+form,
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+caption,
+legend {
+    display: none;
+}
+
+button{
+    background: transparent;
+    border:none;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+/*reset.css끝*/

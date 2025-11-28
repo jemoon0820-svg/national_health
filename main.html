@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>국가건강조사포털</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+       <link rel="stylesheet" href="layout.css">
+
+</head>
+
+<body>
+        <a href="#main-content" class="skip-link">본문 바로가기</a>
+    <div class="gov-banner">
+        <div class="gov-banner-inner">
+            <span class="gov-banner-flag" aria-hidden="true">
+                <img src="/img/flag.png" alt="정부로고">
+            </span>
+            <p class="gov-banner-text">
+                이 누리집은 대한민국 공식 전자정부 누리집입니다.
+            </p>
+        </div>
+    </div>
+    <header class="site-header">
+        <div class="header-inner">
+            <h1 class="site-logo">
+                <a href="/">
+                    <img src="/img/main/logo.png" alt="국가건강조사 통합 메인 로고">
+                </a>
+            </h1>
+
+            <!-- 모바일/태블릿 햄버거 버튼 -->
+            <button type="button" class="mobile-menu-toggle" aria-label="전체 메뉴 열기" aria-expanded="false">
+                <span class="mobile-menu-icon" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+            <!-- GNB 순서: 국민건강영양조사 → 지역사회건강조사 -->
+            <nav class="global-nav" aria-label="주요 조사 메뉴">
+                <ul class="gnb-list">
+                    <!-- 2. 지역사회건강조사 -->
+                    <li class="gnb-item has-sub">
+                        <a href="https://chs.kdca.go.kr/chs/main.do" class="gnb-link" aria-haspopup="true" aria-expanded="false" data-menu="community">
+                            지역사회건강조사
+                        </a>
+                    </li>
+                    <!-- 1. 국민건강영양조사 -->
+                    <li class="gnb-item has-sub">
+                        <a href="https://knhanes.kdca.go.kr/knhanes/main.do" class="gnb-link" aria-haspopup="true" aria-expanded="false" data-menu="nutrition">
+                            국민건강영양조사
+                        </a>
+                    </li>
+
+                    <!-- 3. 청소년건강행태조사 -->
+                    <li class="gnb-item has-sub">
+                        <a href="https://www.kdca.go.kr/yhs/
+" class="gnb-link" aria-haspopup="true" aria-expanded="false" data-menu="youth">
+                            청소년건강행태조사
+                        </a>
+                    </li>
+
+                    <!-- 4. 건강조사통계 -->
+                    <li class="gnb-item has-sub">
+                        <a href="https://chs.kdca.go.kr/cdhs/biz/pblcVis/main.do" class="gnb-link" aria-haspopup="true" aria-expanded="false" data-menu="chronic">
+                            건강조사통계
+                            <img src="/img/main/share.png" alt="건강조사통계 사이트 바로가기">
+                        </a>
+                    </li>
+
+                    <!-- 5. 국가건강정보포털 -->
+                    <li class="gnb-item has-sub">
+                        <a href="https://health.kdca.go.kr/healthinfo/
+" target="_blank" class="gnb-anchor" data-menu="portal"
+                            aria-haspopup="true" title="국가건강정보포털 새 창 열림">
+                            국가건강정보포털
+                            <img src="/img/main/share.png" alt="국가건강정보포털 사이트 바로가기">
+                            <span class="sr-only">새 창 열림</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- 데스크탑 메가메뉴 -->
+        <div class="mega-wrap" id="mega-all">
+            <div class="mega-panel">
+                <div class="mega-inner">
+                    <!-- 2. 지역사회건강조사 -->
+                    <section class="mega-col" data-menu="community">
+                        <h2 class="mega-title"><a href="https://chs.kdca.go.kr/chs/main.do">지역사회건강조사</a></h2>
+                        <ul class="mega-list">
+                            <li><a href="#">사업소개</a></li>
+                            <li><a href="#">조사내용</a></li>
+                            <li><a href="#">지표</a></li>
+                            <li><a href="#">원시자료요청</a></li>
+                            <li><a href="#">수요조사</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">게시판</a></li>
+                        </ul>
+                    </section>
+                    <!-- 1. 국민건강영양조사 -->
+                    <section class="mega-col" data-menu="nutrition">
+                        <h2 class="mega-title"><a href="https://knhanes.kdca.go.kr/knhanes/main.do
+">국민건강영양조사</a></h2>
+                        <ul class="mega-list">
+                            <li><a href="#">조사소개</a></li>
+                            <li><a href="#">결과</a></li>
+                            <li><a href="#">원시자료</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">추적조사</a></li>
+                            <li><a href="#">새소식</a></li>
+                        </ul>
+                    </section>
+
+                    <!-- 3. 청소년건강행태조사 -->
+                    <section class="mega-col" data-menu="youth">
+                        <h2 class="mega-title"><a href="https://www.kdca.go.kr/yhs/
+">청소년건강행태조사</a></h2>
+                        <ul class="mega-list">
+                            <li><a href="#">사업소개</a></li>
+                            <li><a href="#">조사개요</a></li>
+                            <li><a href="#">결과공유</a></li>
+                            <li><a href="#">알림</a></li>
+                        </ul>
+                    </section>
+
+                    <!-- 4. 건강조사통계 -->
+                    <section class="mega-col" data-menu="chronic">
+                        <h2 class="mega-title"><a href="https://chs.kdca.go.kr/cdhs/biz/pblcVis/main.do">건강조사통계</a></h2>
+                    </section>
+
+                    <!-- 5. 국가건강정보포털 -->
+                    <section class="mega-col" data-menu="portal">
+                        <h2 class="mega-title"><a href="https://health.kdca.go.kr/healthinfo/
+">국가건강정보포털</a></h2>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 모바일/태블릿 전체메뉴 오버레이 + 패널 -->
+    <div class="mo-menu-overlay" aria-hidden="true"></div>
+
+    <nav class="mo-menu" aria-label="모바일 전체 메뉴">
+        <div class="mo-menu-header">
+            <div class="mo-menu-logo">
+                <img src="/img/main/logo.png" alt="국가건강조사 통합 메인 로고">
+            </div>
+            <button type="button" class="mo-menu-close" aria-label="전체 메뉴 닫기">
+                <img src="/img/main/menu-close.png" alt="메뉴닫기 버튼">
+            </button>
+        </div>
+        <div class="mo-menu-body">
+            <ul class="mo-depth1-list">
+
+                <!-- 2. 지역사회건강조사 -->
+                <li class="mo-depth1-item is-open">
+                    <button type="button" class="mo-depth1-btn" aria-expanded="true" aria-controls="mo-sub-community">
+                        <a href="https://chs.kdca.go.kr/chs/main.do" class="mo-depth1-label">지역사회건강조사</a>
+                        <span class="mo-depth1-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="mo-depth2-wrap" id="mo-sub-community">
+                        <ul class="mo-depth2-list">
+                            <li><a href="#">사업소개</a></li>
+                            <li><a href="#">조사내용</a></li>
+                            <li><a href="#">원시자료요청</a></li>
+                            <li><a href="#">수요조사</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">게시판</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- 1. 국민건강영양조사 (기본 펼쳐짐) -->
+                <li class="mo-depth1-item">
+                    <button type="button" class="mo-depth1-btn" aria-expanded="false" aria-controls="mo-sub-nutrition">
+                        <a href="https://knhanes.kdca.go.kr/knhanes/main.do" class="mo-depth1-label">국민건강영양조사</a>
+                        <span class="mo-depth1-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="mo-depth2-wrap" id="mo-sub-nutrition">
+                        <ul class="mo-depth2-list">
+                            <li><a href="#">조사소개</a></li>
+                            <li><a href="#">결과</a></li>
+                            <li><a href="#">원시자료</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">추적조사</a></li>
+                            <li><a href="#">새소식</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- 3. 청소년건강행태조사 -->
+                <li class="mo-depth1-item">
+                    <button type="button" class="mo-depth1-btn" aria-expanded="false" aria-controls="mo-sub-youth">
+                        <a href="https://www.kdca.go.kr/yhs/
+" class="mo-depth1-label">청소년건강행태조사</a>
+                        <span class="mo-depth1-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="mo-depth2-wrap" id="mo-sub-youth">
+                        <ul class="mo-depth2-list">
+                            <li><a href="#">사업소개</a></li>
+                            <li><a href="#">조사개요</a></li>
+                            <li><a href="#">결과공유</a></li>
+                            <li><a href="#">알림</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- 4. 건강조사통계 -->
+                <li class="mo-depth1-item">
+                    <a href="https://chs.kdca.go.kr/cdhs/biz/pblcVis/main.do
+" class="mo-depth1-link">
+                        <span>건강조사통계</span>
+                        <img src="/img/main/mo-share.png" alt="건강조사통계 사이트 바로가기">
+                    </a>
+                </li>
+
+                <!-- 5. 국가건강정보포털 -->
+                <li class="mo-depth1-item">
+                    <a href="https://health.kdca.go.kr/healthinfo/
+" class="mo-depth1-link" target="_blank" title="국가건강정보포털 새 창 열림">
+                        <span>국가건강정보포털</span>
+                        <img src="/img/main/mo-share.png" alt="국민건강정보포털 사이트 바로가기">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mega-backdrop" aria-hidden="true"></div>
+
+    <main id="main-content"  class="survey-section">
+        <div class="survey-top">
+            <div class="survey-visual">
+                <article class="survey-visual-panel survey-visual-panel--local is-active" data-panel="local">
+                    <img src="/img/main/visual-local.png" alt="지역사회건강조사를 표현한 메인 이미지" class="visual-main-img">
+                </article>
+
+                <article class="survey-visual-panel" data-panel="nhanes">
+                    <div class="visual-bg visual-bg--nhanes">
+                        <img src="/img/main/visual-health.png" alt="국민건강영양조사를 표현한 메인 이미지" class="visual-main-img">
+                    </div>
+                </article>
+
+                <article class="survey-visual-panel" data-panel="youth">
+                    <div class="visual-bg visual-bg--youth">
+                        <img src="/img/main/visual-youth.png" alt="청소년건강행태조사 배경 이미지">
+                    </div>
+                </article>
+
+                <article class="survey-visual-panel" data-panel="chronic">
+                    <div class="visual-bg visual-bg--chronic">
+                        <img src="/img/health/chronic-bg.jpg" alt="건강조사통계 배경 이미지">
+                    </div>
+                    <div class="visual-content">
+                        <p class="visual-kicker">데이터로 보는 건강!</p>
+                        <h3 class="visual-title">건강조사통계</h3>
+                        <p class="visual-desc">
+                            각종 만성질환의 유병, 관리현황을 통계로 제공합니다.
+                        </p>
+                        <button type="button" class="visual-btn">
+                            자세히 보기
+                            <span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+                    <div class="visual-bus">
+                        <img src="/img/health/chronic-img.png" alt="건강조사통계를 표현한 그래프 일러스트">
+                    </div>
+                </article>
+
+                <article class="survey-visual-panel" data-panel="portal">
+                    <div class="visual-bg visual-bg--portal">
+                        <img src="/img/health/portal-bg.jpg" alt="국가건강정보포털 배경 이미지">
+                    </div>
+                    <div class="visual-content">
+                        <p class="visual-kicker">쉽게 보는 건강정보</p>
+                        <h3 class="visual-title">국가건강정보포털</h3>
+                        <p class="visual-desc">
+                            믿을 수 있는 질병·건강정보를 한 곳에서 제공합니다.
+                        </p>
+                        <button type="button" class="visual-btn">
+                            자세히 보기
+                            <span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+                    <div class="visual-bus">
+                        <img src="/img/health/portal-img.png" alt="국가건강정보포털을 상징하는 아이콘 이미지">
+                    </div>
+                </article>
+            </div>
+
+            <nav class="survey-nav" aria-label="조사 선택">
+                <!-- 여기 오른쪽 세로 버튼 순서는 그대로(지역 → 국민) 두었음 -->
+                <button type="button" class="survey-nav-item survey-nav-item--local is-active" data-target="nhanes">
+                    <span class="survey-nav-left">
+                        <span class="survey-nav-icon">
+                            <img src="/img/main/tab-icon02.png" alt="국민건강영양조사 아이콘" aria-hidden="true">
+                        </span>
+                        <span class="survey-nav-label">국민건강영양조사</span>
+                    </span>
+                    <span class="survey-nav-right" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="survey-nav-item survey-nav-item--nhanes" data-target="local">
+                    <span class="survey-nav-left">
+                        <span class="survey-nav-icon">
+                            <img src="/img/main/tab-icon01.png" alt="지역사회건강조사 아이콘" aria-hidden="true">
+                        </span>
+                        <span class="survey-nav-label">지역사회건강조사</span>
+                    </span>
+                    <span class="survey-nav-right" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="survey-nav-item survey-nav-item--youth" data-target="youth">
+                    <span class="survey-nav-left">
+                        <span class="survey-nav-icon">
+                            <img src="/img/main/tab-icon03.png" alt="청소년건강행태조사 아이콘" aria-hidden="true">
+                        </span>
+                        <span class="survey-nav-label">청소년건강행태조사</span>
+                    </span>
+                    <span class="survey-nav-right" aria-hidden="true"></span>
+                </button>
+
+                <button type="button" class="survey-nav-item survey-nav-item--chronic" data-target="chronic"
+                    data-link="https://chs.kdca.go.kr/cdhs/biz/pblcVis/main.do">
+                    <span class="survey-nav-left">
+                        <span class="survey-nav-icon">
+                            <img src="/img/main/tab-icon04.png" alt="건강조사통계 아이콘" aria-hidden="true">
+                        </span>
+                        <span class="survey-nav-label">건강조사통계</span>
+                    </span>
+                    <span class="survey-nav-right" aria-hidden="true"></span>
+                </button>
+
+                <button type="button" class="survey-nav-item survey-nav-item--portal" data-target="portal"
+                    data-link="https://health.kdca.go.kr/healthinfo/">
+                    <span class="survey-nav-left">
+                        <span class="survey-nav-icon">
+                            <img src="/img/main/tab-icon05.png" alt="국가건강정보포털 아이콘" aria-hidden="true">
+                        </span>
+                        <span class="survey-nav-label">국가건강정보포털</span>
+                    </span>
+                    <span class="survey-nav-right" aria-hidden="true"></span>
+                </button>
+            </nav>
+        </div>
+
+        <div class="survey-shortcuts" aria-label="바로가기 메뉴">
+            <div class="survey-shortcuts-group is-active" data-shortcuts="local">
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/main/link_btn-icon01.png" alt="지역건강통계 한눈에보기 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">지역건강통계 한눈에보기</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/main/link_btn-icon02.png" alt="지역사회건강조사 대시보드 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">지역사회건강조사 대시보드</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/main/link_btn-icon03.png" alt="지역사회 건강프로토타입 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">지역사회 건강프로토타입</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/main/link_btn-icon04.png" alt="우리지역 건강통계 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">우리지역 건강통계</span>
+                </a>
+            </div>
+
+            <div class="survey-shortcuts-group" data-shortcuts="chronic">
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/health/ico-chart.svg" alt="통계 그래프 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">만성질환 통계집</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/health/ico-plus.svg" alt="추가 플러스 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">통계플러스</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/health/ico-file.svg" alt="파일 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">원시자료</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/health/ico-doc.svg" alt="문서 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">학술연구자료신청</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/health/ico-search.svg" alt="검색 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">논문등록현황</span>
+                </a>
+            </div>
+
+            <div class="survey-shortcuts-group" data-shortcuts="nhanes">
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/main/link_btn-icon01.png" alt="통계집 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">통계집</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/main/link_btn-icon02.png" alt="통계플러스 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">통계플러스</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/main/link_btn-icon03.png" alt="원시자료 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">원시자료</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/main/link_btn-icon05.png" alt="학술연구자료신청 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">학술연구자료신청</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/main/link_btn-icon06.png" alt="논문등록현황 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">논문등록현황</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/main/link_btn-icon04.png" alt="추적조사 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">추적조사</span>
+                </a>
+            </div>
+
+            <div class="survey-shortcuts-group" data-shortcuts="youth">
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/main/link_btn-icon04.png" alt="책 모양 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">조사소개</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/main/link_btn-icon04.png" alt="플러스 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">주요지표</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/main/link_btn-icon04.png" alt="파일 모양 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">원시자료</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/main/link_btn-icon04.png" alt="문서 모양 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">보고서</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/main/link_btn-icon04.png" alt="통계 차트 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">통계열람</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/main/link_btn-icon04.png" alt="돋보기 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">자료검색</span>
+                </a>
+            </div>
+
+            <div class="survey-shortcuts-group" data-shortcuts="portal">
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/health/ico-book.svg" alt="질병정보 책 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">질병정보</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/health/ico-plus.svg" alt="생활수칙 플러스 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">생활수칙</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/health/ico-file.svg" alt="자가검진 파일 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">자가검진</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/health/ico-doc.svg" alt="카드뉴스 문서 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">카드뉴스</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/health/ico-chart.svg" alt="통계자료 차트 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">통계자료</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <span class="shortcut-icon">
+                        <img src="/img/health/ico-search.svg" alt="검색 돋보기 아이콘" aria-hidden="true">
+                    </span>
+                    <span class="shortcut-label">검색</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <section class="graph-zone-wrap">
+        <div class="graph-zone">
+            <!-- 지역사회건강조사 그래프 -->
+            <div class="graph-set is-active" data-graph="local">
+                <div class="graph-header">
+                    <div class="graph-header-left">
+                        <h2 class="graph-title">그래프존</h2>
+
+                        <div class="graph-tabs" role="tablist" aria-label="지역사회건강조사 그래프 지표 선택">
+                            <button type="button" class="graph-tab-button is-active" data-target="smoke" role="tab"
+                                aria-selected="true">
+                                현재흡연율
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="obesity" role="tab"
+                                aria-selected="false">
+                                비만율
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="walk" role="tab"
+                                aria-selected="false">
+                                걷기 실천율
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="depress" role="tab"
+                                aria-selected="false">
+                                우울감경험률
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="chew" role="tab"
+                                aria-selected="false">
+                                저작불편호소율
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="more">
+                        <a href="#" aria-label="그래프 더보기">더보기
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M9.99902 2.5C10.3672 2.5 10.666 2.7988 10.666 3.16699V9.33398H16.833C17.2011 9.33398 17.4999 9.63188 17.5 10C17.5 10.3682 17.2012 10.667 16.833 10.667H10.666V16.833C10.666 17.2012 10.3672 17.5 9.99902 17.5C9.63098 17.4998 9.33301 17.2011 9.33301 16.833V10.667H3.16699C2.7988 10.667 2.5 10.3682 2.5 10C2.50009 9.63188 2.79886 9.33398 3.16699 9.33398H9.33301V3.16699C9.33301 2.79891 9.63098 2.50018 9.99902 2.5Z"
+                                    fill="#33363D" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="graph-card">
+                    <div class="graph-panel is-active" data-panel="smoke">
+                        <img src="/img/main/current-smoke.png" alt="지역별 현재흡연율 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="obesity">
+                        <img src="/img/main/local-obesity.png" alt="지역별 비만율 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="walk">
+                        <img src="/img/main/local-walk.png" alt="지역별 걷기 실천율 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="depress">
+                        <img src="/img/main/local-depress.png" alt="지역별 우울감경험률 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="chew">
+                        <img src="/img/main/local-chew.png" alt="지역별 저작불편호소율 그래프">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 국민건강영양조사 그래프 -->
+            <div class="graph-set" data-graph="nhanes">
+                <div class="graph-header">
+                    <div class="graph-header-left">
+                        <h2 class="graph-title">그래프존</h2>
+
+                        <div class="graph-tabs" role="tablist" aria-label="국민건강영양조사 그래프 지표 선택">
+                            <button type="button" class="graph-tab-button is-active" data-target="health" role="tab"
+                                aria-selected="true">
+                                건강행태
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="nutritional" role="tab"
+                                aria-selected="false">
+                                영양섭취
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="disease" role="tab"
+                                aria-selected="false">
+                                만성질환
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+                        </div>
+                    </div>
+
+                    <div class="more">
+                        <a href="#" aria-label="그래프 더보기">더보기
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M9.99902 2.5C10.3672 2.5 10.666 2.7988 10.666 3.16699V9.33398H16.833C17.2011 9.33398 17.4999 9.63188 17.5 10C17.5 10.3682 17.2012 10.667 16.833 10.667H10.666V16.833C10.666 17.2012 10.3672 17.5 9.99902 17.5C9.63098 17.4998 9.33301 17.2011 9.33301 16.833V10.667H3.16699C2.7988 10.667 2.5 10.3682 2.5 10C2.50009 9.63188 2.79886 9.33398 3.16699 9.33398H9.33301V3.16699C9.33301 2.79891 9.63098 2.50018 9.99902 2.5Z"
+                                    fill="#33363D" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="graph-card">
+                    <div class="graph-panel is-active" data-panel="health">
+                        <img src="/img/main/health.png" alt="국민건강영양조사 건강행태 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="nutritional">
+                        <img src="/img/main/nhanes-sodium.png" alt="국민건강영양조사 영양섭취 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="disease">
+                        <img src="/img/main/nhanes-fat.png" alt="국민건강영양조사 만성질환 관련 그래프">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 청소년건강행태조사 그래프 -->
+            <div class="graph-set" data-graph="youth">
+                <div class="graph-header">
+                    <div class="graph-header-left">
+                        <h2 class="graph-title">그래프존</h2>
+
+                        <div class="graph-tabs" role="tablist" aria-label="청소년건강행태조사 그래프 지표 선택">
+                            <button type="button" class="graph-tab-button is-active" data-target="y_smoke" role="tab"
+                                aria-selected="true">
+                                현재흡연율(청소년)
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="y_drink" role="tab"
+                                aria-selected="false">
+                                음주율
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="y_obesity" role="tab"
+                                aria-selected="false">
+                                비만율(청소년)
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="y_stress" role="tab"
+                                aria-selected="false">
+                                스트레스인지율
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="y_depress" role="tab"
+                                aria-selected="false">
+                                우울감경험률
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="more">
+                        <a href="#" aria-label="그래프 더보기">더보기
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M9.99902 2.5C10.3672 2.5 10.666 2.7988 10.666 3.16699V9.33398H16.833C17.2011 9.33398 17.4999 9.63188 17.5 10C17.5 10.3682 17.2012 10.667 16.833 10.667H10.666V16.833C10.666 17.2012 10.3672 17.5 9.99902 17.5C9.63098 17.4998 9.33301 17.2011 9.33301 16.833V10.667H3.16699C2.7988 10.667 2.5 10.3682 2.5 10C2.50009 9.63188 2.79886 9.33398 3.16699 9.33398H9.33301V3.16699C9.33301 2.79891 9.63098 2.50018 9.99902 2.5Z"
+                                    fill="#33363D" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="graph-card">
+                    <div class="graph-panel is-active" data-panel="y_smoke">
+                        <img src="/img/main/youth-smoke.png" alt="청소년 현재흡연율 추이 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="y_drink">
+                        <img src="/img/main/youth-drink.png" alt="청소년 음주율 추이 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="y_obesity">
+                        <img src="/img/main/youth-obesity.png" alt="청소년 비만율 추이 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="y_stress">
+                        <img src="/img/main/youth-stress.png" alt="청소년 스트레스인지율 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="y_depress">
+                        <img src="/img/main/youth-depress.png" alt="청소년 우울감경험률 그래프">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 건강조사통계 그래프 -->
+            <div class="graph-set" data-graph="chronic">
+                <div class="graph-header">
+                    <div class="graph-header-left">
+                        <h2 class="graph-title">그래프존</h2>
+
+                        <div class="graph-tabs" role="tablist" aria-label="건강조사통계 그래프 지표 선택">
+                            <button type="button" class="graph-tab-button is-active" data-target="htn" role="tab"
+                                aria-selected="true">
+                                고혈압 유병률
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="dm" role="tab"
+                                aria-selected="false">
+                                당뇨병 유병률
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="hchol" role="tab"
+                                aria-selected="false">
+                                고콜레스테롤혈증
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="stroke" role="tab"
+                                aria-selected="false">
+                                뇌졸중 유병률
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="mi" role="tab"
+                                aria-selected="false">
+                                심근경색증 유병률
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="more">
+                        <a href="#" aria-label="그래프 더보기">더보기
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M9.99902 2.5C10.3672 2.5 10.666 2.7988 10.666 3.16699V9.33398H16.833C17.2011 9.33398 17.4999 9.63188 17.5 10C17.5 10.3682 17.2012 10.667 16.833 10.667H10.666V16.833C10.666 17.2012 10.3672 17.5 9.99902 17.5C9.63098 17.4998 9.33301 17.2011 9.33301 16.833V10.667H3.16699C2.7988 10.667 2.5 10.3682 2.5 10C2.50009 9.63188 2.79886 9.33398 3.16699 9.33398H9.33301V3.16699C9.33301 2.79891 9.63098 2.50018 9.99902 2.5Z"
+                                    fill="#33363D" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="graph-card">
+                    <div class="graph-panel is-active" data-panel="htn">
+                        <img src="/img/main/chronic-htn.png" alt="연령대별 고혈압 유병률 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="dm">
+                        <img src="/img/main/chronic-dm.png" alt="연령대별 당뇨병 유병률 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="hchol">
+                        <img src="/img/main/chronic-hchol.png" alt="연령대별 고콜레스테롤혈증 유병률 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="stroke">
+                        <img src="/img/main/chronic-stroke.png" alt="연령대별 뇌졸중 유병률 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="mi">
+                        <img src="/img/main/chronic-mi.png" alt="연령대별 심근경색증 유병률 그래프">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 국가건강정보포털 그래프 -->
+            <div class="graph-set" data-graph="portal">
+                <div class="graph-header">
+                    <div class="graph-header-left">
+                        <h2 class="graph-title">그래프존</h2>
+
+                        <div class="graph-tabs" role="tablist" aria-label="국가건강정보포털 그래프 지표 선택">
+                            <button type="button" class="graph-tab-button is-active" data-target="top" role="tab"
+                                aria-selected="true">
+                                조회수 상위 질환
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="age" role="tab"
+                                aria-selected="false">
+                                연령별 질환검색
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="season" role="tab"
+                                aria-selected="false">
+                                계절별 질환검색
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="prevent" role="tab"
+                                aria-selected="false">
+                                예방수칙 조회
+                            </button>
+
+                            <span class="graph-tab-sep" aria-hidden="true">·</span>
+
+                            <button type="button" class="graph-tab-button" data-target="selfcheck" role="tab"
+                                aria-selected="false">
+                                자가검진 이용률
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="more">
+                        <a href="#" aria-label="그래프 더보기">더보기
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M9.99902 2.5C10.3672 2.5 10.666 2.7988 10.666 3.16699V9.33398H16.833C17.2011 9.33398 17.4999 9.63188 17.5 10C17.5 10.3682 17.2012 10.667 16.833 10.667H10.666V16.833C10.666 17.2012 10.3672 17.5 9.99902 17.5C9.63098 17.4998 9.33301 17.2011 9.33301 16.833V10.667H3.16699C2.7988 10.667 2.5 10.3682 2.5 10C2.50009 9.63188 2.79886 9.33398 3.16699 9.33398H9.33301V3.16699C9.33301 2.79891 9.63098 2.50018 9.99902 2.5Z"
+                                    fill="#33363D" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="graph-card">
+                    <div class="graph-panel is-active" data-panel="top">
+                        <img src="/img/main/portal-top.png" alt="조회수 상위 질환 순위 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="age">
+                        <img src="/img/main/portal-age.png" alt="연령별 질환 검색 비율 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="season">
+                        <img src="/img/main/portal-season.png" alt="계절별 질환 검색 추이 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="prevent">
+                        <img src="/img/main/portal-prevent.png" alt="예방수칙 페이지 조회수 추이 그래프">
+                    </div>
+                    <div class="graph-panel" data-panel="selfcheck">
+                        <img src="/img/main/portal-selfcheck.png" alt="자가검진 서비스 이용률 그래프">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="notice-section" aria-labelledby="notice-heading">
+        <div class="notice-inner">
+            <div class="notice-header">
+                <h2 id="notice-heading" class="notice-title">공지사항</h2>
+                <div class="more">
+                    <a href="#" aria-label="공지사항 더보기">더보기
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M9.99902 2.5C10.3672 2.5 10.666 2.7988 10.666 3.16699V9.33398H16.833C17.2011 9.33398 17.4999 9.63188 17.5 10C17.5 10.3682 17.2012 10.667 16.833 10.667H10.666V16.833C10.666 17.2012 10.3672 17.5 9.99902 17.5C9.63098 17.4998 9.33301 17.2011 9.33301 16.833V10.667H3.16699C2.7988 10.667 2.5 10.3682 2.5 10C2.50009 9.63188 2.79886 9.33398 3.16699 9.33398H9.33301V3.16699C9.33301 2.79891 9.63098 2.50018 9.99902 2.5Z"
+                                fill="#33363D" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="notice-list">
+                <li class="notice-item notice-item--primary">
+                    <a href="#" class="notice-item-link">
+                        <strong class="notice-item-title">
+                            코로나19 예방접종 국가지원 대상 접종가능 기관 안내 (2025.6.26. 기준)
+                        </strong>
+                        <p class="notice-item-desc">
+                            예방접종 국가지원 대상 접종 가능한 의료기관을 붙임과 같이 안내드립니다.
+                        </p>
+                    </a>
+                </li>
+
+                <li class="notice-item">
+                    <a href="#" class="notice-item-link">
+                        <strong class="notice-item-title">
+                            코로나19 예방접종 국가지원 대상 접종가능 기관 안내 (2025.6.26. 기준)
+                        </strong>
+                        <p class="notice-item-desc">
+                            예방접종 국가지원 대상자분들께 접종 가능한 의료기관을 별첨 파일로 안내드립니다.
+                        </p>
+                    </a>
+                </li>
+
+                <li class="notice-item">
+                    <a href="#" class="notice-item-link">
+                        <strong class="notice-item-title">
+                            2025년 1분기 국가예방접종 전산 등록 현황
+                        </strong>
+                        <p class="notice-item-desc">
+                            국가예방접종사업에 대한 분기별·시도별 접종현황을 공유드립니다.
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="site-footer" aria-label="사이트 정보">
+        <div class="footer-partners-area">
+            <div class="footer-site-inner">
+                <div class="footer-partners">
+                    <ul class="footer-partners-list" aria-label="관련 기관 로고">
+                        <!-- 순서: 국민건강영양조사 → 지역사회건강조사 → ... -->
+                        <li class="footer-partners-item">
+                            <a href="https://chs.kdca.go.kr/chs/main.do">
+                            <img src="/img/main/community-health.png" alt="지역사회건강조사">
+                            </a>
+                        </li>
+                                      <li class="footer-partners-item">
+                            <a href="https://knhanes.kdca.go.kr/knhanes/main.do
+">  <img src="/img/main/nutrition-survey.png" alt="국민건강영양조사"></a>
+                                      
+                        </li>
+                        <li class="footer-partners-item">
+                            <a href="https://www.kdca.go.kr/yhs/
+">
+                            <img src="/img/main/youth-health.png" alt="청소년건강행태조사"></a>
+                        </li>
+                        <li class="footer-partners-item">
+                            <a href="https://chs.kdca.go.kr/cdhs/biz/pblcVis/main.do"></a>
+                            <img src="/img/main/footer-health-logo.png" alt="건강조사통계">
+                        </li>
+                        <li class="footer-partners-item">
+                            <a href="https://health.kdca.go.kr/healthinfo/
+">
+                            <img src="/img/main/national-health.png" alt="국가건강정보포털"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-area">
+            <div class="footer-inner">
+                <div class="footer-bottom">
+                    <div class="footer-info">
+                        <div class="footer-logo-main">
+                            <img src="/img/main/footer_national-health.png" alt="국가건강조사포털">
+                        </div>
+                        <div class="footer-text">
+                            <span class="footer-contact">
+                                (28159) 충북 청주시 흥덕구 오송읍 오송생명2로 187 질병관리청<br>
+                                <strong>TEL</strong>&nbsp;&nbsp;|&nbsp;&nbsp; 043-719-7396,7391&nbsp;&nbsp;&nbsp;
+                                <strong>FAX</strong>&nbsp;&nbsp;|&nbsp;&nbsp;043-719-7429
+                            </span>
+                            <span class="footer-copy">
+                                COPYRIGHT ⓒ 2025 질병관리청 ALL RIGHTS RESERVED.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="footer-wa">
+                        <img src="/img/main/wa-logo.png" alt="웹 접근성 품질인증 마크">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const header = document.querySelector('.site-header');
+            const megaWrap = document.getElementById('mega-all');
+            const megaBackdrop = document.querySelector('.mega-backdrop');
+
+            const triggers = header.querySelectorAll(
+                '.gnb-item.has-sub > .gnb-link, .gnb-item.has-sub > .gnb-anchor'
+            );
+            const cols = megaWrap.querySelectorAll('.mega-col');
+
+            function setActiveColumn(menuKey) {
+                cols.forEach(col => {
+                    col.classList.toggle('mega-col--active', col.dataset.menu === menuKey);
+                });
+            }
+
+            function openMegaByKey(menuKey) {
+                if (!menuKey) return;
+
+                megaWrap.classList.add('is-open');
+                if (megaBackdrop) megaBackdrop.classList.add('is-open');
+                setActiveColumn(menuKey);
+
+                header.querySelectorAll('.gnb-item').forEach(li => li.classList.remove('is-current'));
+                const currentTrigger = header.querySelector('.gnb-item [data-menu="' + menuKey + '"]');
+                if (currentTrigger) {
+                    currentTrigger.parentElement.classList.add('is-current');
+                }
+
+                triggers.forEach(el => {
+                    if (el.classList.contains('gnb-link')) {
+                        const expanded = (el === currentTrigger);
+                        el.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+                    }
+                });
+            }
+
+            function openMega(trigger) {
+                const key = trigger.dataset.menu;
+                if (!key) return;
+                openMegaByKey(key);
+            }
+
+            function closeMega() {
+                megaWrap.classList.remove('is-open');
+                if (megaBackdrop) megaBackdrop.classList.remove('is-open');
+
+                triggers.forEach(el => {
+                    if (el.classList.contains('gnb-link')) {
+                        el.setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                header.querySelectorAll('.gnb-item').forEach(li => li.classList.remove('is-current'));
+                cols.forEach(col => col.classList.remove('mega-col--active'));
+            }
+
+            const current = header.querySelector('.gnb-item.is-current [data-menu]');
+            if (current) {
+                setActiveColumn(current.dataset.menu);
+            }
+
+            triggers.forEach(el => {
+                el.addEventListener('mouseenter', () => openMega(el));
+                el.addEventListener('focus', () => openMega(el));
+
+                if (el.classList.contains('gnb-link')) {
+                    el.addEventListener('click', (e) => {
+                        // e.preventDefault();
+
+                        const isOpen = megaWrap.classList.contains('is-open')
+                            && el.getAttribute('aria-expanded') === 'true';
+
+                        if (isOpen) {
+                            closeMega();
+                        } else {
+                            openMega(el);
+                        }
+                    });
+                }
+            });
+
+            cols.forEach(col => {
+                const key = col.dataset.menu;
+
+                col.addEventListener('mouseenter', () => {
+                    openMegaByKey(key);
+                });
+
+                col.addEventListener('focusin', () => {
+                    openMegaByKey(key);
+                });
+            });
+
+            header.addEventListener('mouseleave', () => {
+                closeMega();
+            });
+
+            header.addEventListener('focusout', (e) => {
+                if (!header.contains(e.relatedTarget)) {
+                    closeMega();
+                }
+            });
+
+            header.addEventListener('keyup', (e) => {
+                if (e.key === 'Escape') {
+                    closeMega();
+                }
+            });
+
+            if (megaBackdrop) {
+                megaBackdrop.addEventListener('click', () => {
+                    closeMega();
+                });
+            }
+
+            /* =========================
+               메인 비주얼 / 바로가기 / 그래프 연동
+               ========================= */
+            const navItems = document.querySelectorAll('.survey-nav-item');
+            const panels = document.querySelectorAll('.survey-visual-panel');
+            const shortcutGroups = document.querySelectorAll('.survey-shortcuts-group');
+            const graphSets = document.querySelectorAll('.graph-set');
+            let currentMobilePanel = null;
+
+            const isMobile = () => window.matchMedia('(max-width: 875px)').matches;
+
+            function setDesktopPanel(target) {
+                panels.forEach(panel => {
+                    panel.classList.toggle(
+                        'is-active',
+                        panel.getAttribute('data-panel') === target
+                    );
+                });
+            }
+
+            function setShortcuts(target) {
+                shortcutGroups.forEach(group => {
+                    group.classList.toggle(
+                        'is-active',
+                        group.getAttribute('data-shortcuts') === target
+                    );
+                });
+            }
+
+            function setGraphSet(target) {
+                graphSets.forEach(set => {
+                    set.classList.toggle(
+                        'is-active',
+                        set.getAttribute('data-graph') === target
+                    );
+                });
+            }
+
+            function removeMobilePanel() {
+                if (currentMobilePanel && currentMobilePanel.parentNode) {
+                    currentMobilePanel.parentNode.removeChild(currentMobilePanel);
+                }
+                currentMobilePanel = null;
+            }
+
+            function showMobilePanel(target) {
+                if (!isMobile()) return;
+
+                removeMobilePanel();
+
+                const srcPanel = document.querySelector('.survey-visual-panel[data-panel="' + target + '"]');
+                const btn = document.querySelector('.survey-nav-item[data-target="' + target + '"]');
+                if (!srcPanel || !btn) return;
+
+                const wrap = document.createElement('div');
+                wrap.className = 'survey-mobile-panel';
+
+                if (srcPanel.querySelector('.visual-content')) {
+                    wrap.classList.add('has-content');
+                } else {
+                    wrap.classList.add('only-bg');
+                }
+
+                wrap.innerHTML = srcPanel.innerHTML;
+
+                btn.insertAdjacentElement('afterend', wrap);
+                currentMobilePanel = wrap;
+            }
+
+            navItems.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const link = btn.getAttribute('data-link');
+
+                    if (link) {
+                        window.location.href = link;
+                        return;
+                    }
+
+                    const target = btn.getAttribute('data-target');
+
+                    navItems.forEach(b => b.classList.remove('is-active'));
+                    btn.classList.add('is-active');
+
+                    setDesktopPanel(target);
+                    setShortcuts(target);
+                    setGraphSet(target);
+                    showMobilePanel(target);
+                });
+            });
+
+            // 초기 상태: 지역사회(local) 기준
+            setDesktopPanel('local');
+            setShortcuts('local');
+            setGraphSet('local');
+            showMobilePanel('local');
+
+            window.addEventListener('resize', () => {
+                if (!isMobile()) {
+                    removeMobilePanel();
+                } else {
+                    const active = document.querySelector('.survey-nav-item.is-active');
+                    if (active) {
+                        showMobilePanel(active.getAttribute('data-target'));
+                    }
+                }
+            });
+
+            // 그래프존 탭 전환
+            document.querySelectorAll('.graph-set').forEach(set => {
+                const tabs = set.querySelectorAll('.graph-tab-button');
+                const panels = set.querySelectorAll('.graph-panel');
+
+                if (!tabs.length || !panels.length) return;
+
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        const target = tab.getAttribute('data-target');
+
+                        tabs.forEach(t => {
+                            const isActive = (t === tab);
+                            t.classList.toggle('is-active', isActive);
+                            t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+                        });
+
+                        panels.forEach(panel => {
+                            panel.classList.toggle(
+                                'is-active',
+                                panel.getAttribute('data-panel') === target
+                            );
+                        });
+                    });
+                });
+            });
+
+            /* =========================
+               모바일/태블릿 전체메뉴 스크립트
+               ========================= */
+            const body = document.body;
+            const moToggle = document.querySelector('.mobile-menu-toggle');
+            const moOverlay = document.querySelector('.mo-menu-overlay');
+            const moMenu = document.querySelector('.mo-menu');
+            const moClose = document.querySelector('.mo-menu-close');
+            const moDepthButtons = moMenu.querySelectorAll('.mo-depth1-btn');
+            const moDepthItems = moMenu.querySelectorAll('.mo-depth1-item');
+
+            function openMoMenu() {
+                body.classList.add('is-mo-menu-open');
+                moOverlay.setAttribute('aria-hidden', 'false');
+                if (moToggle) moToggle.setAttribute('aria-expanded', 'true');
+            }
+
+            function closeMoMenu() {
+                body.classList.remove('is-mo-menu-open');
+                moOverlay.setAttribute('aria-hidden', 'true');
+                if (moToggle) moToggle.setAttribute('aria-expanded', 'false');
+            }
+
+            if (moToggle) {
+                moToggle.addEventListener('click', openMoMenu);
+            }
+
+            if (moClose) {
+                moClose.addEventListener('click', closeMoMenu);
+            }
+
+            if (moOverlay) {
+                moOverlay.addEventListener('click', closeMoMenu);
+            }
+
+            document.addEventListener('keyup', function (e) {
+                if (e.key === 'Escape' && body.classList.contains('is-mo-menu-open')) {
+                    closeMoMenu();
+                }
+            });
+
+            moDepthButtons.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    const item = btn.closest('.mo-depth1-item');
+                    const hasSub = item.querySelector('.mo-depth2-wrap');
+                    if (!hasSub) return;
+
+                    const isOpen = item.classList.contains('is-open');
+
+                    moDepthItems.forEach(function (li) {
+                        li.classList.remove('is-open');
+                        const b = li.querySelector('.mo-depth1-btn');
+                        if (b) {
+                            b.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+
+                    if (!isOpen) {
+                        item.classList.add('is-open');
+                        btn.setAttribute('aria-expanded', 'true');
+                    } else {
+                        item.classList.remove('is-open');
+                        btn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+
+            window.addEventListener('resize', function () {
+                if (!window.matchMedia('(max-width: 1024px)').matches) {
+                    closeMoMenu();
+                }
+            });
+        })();
+    </script>
+
+</body>
+
+</html>
