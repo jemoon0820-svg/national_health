@@ -254,12 +254,12 @@ line-height: 150%;
         }
 
         .survey-nav-item.is-active .survey-nav-right::before {
-            content: url('/img/mage_tag-check-fill.png');
+            content: url('img/mage_tag-check-fill.png');
             color: #18a44c;
         }
 
         .survey-nav-item:hover:not(.is-active) .survey-nav-right::before {
-            content: url('/img/circle-check.png');
+            content: url('img/circle-check.png');
         }
 
         .survey-nav-item--local {
@@ -679,11 +679,11 @@ line-height: 150%;
             width: 18px;
             height: 18px;
             flex: 0 0 18px;
-            background: url('/img/main/menu-plus.png') center center no-repeat;
+            background: url('img/main/menu-plus.png') center center no-repeat;
         }
 
         .mo-depth1-item.is-open .mo-depth1-icon {
-            background-image: url('/img/main/menu_minus-white.png');
+            background-image: url('img/main/menu_minus-white.png');
         }
 
         .mo-depth1-item.is-open .mo-depth1-btn {
@@ -1296,7 +1296,7 @@ line-height: 150%;
 
             .survey-nav-right::before {
                 content: '';
-                background: url('/img/circle-check.png') no-repeat center;
+                background: url('img/circle-check.png') no-repeat center;
                 background-size: 16px 16px;
                 transform: rotate(180deg);
                 transition: transform .25s ease;
@@ -1313,14 +1313,14 @@ line-height: 150%;
 
             .survey-nav-item.is-active .survey-nav-right::before {
                 content: '';
-                background: url('/img/circle-check.png') no-repeat center;
+                background: url('img/circle-check.png') no-repeat center;
                 background-size: 16px 16px;
                 transform: rotate(0deg);
             }
 
             .survey-nav-item:hover:not(.is-active) .survey-nav-right::before {
                 content: '';
-                background: url('/img/circle-check.png') no-repeat center;
+                background: url('img/circle-check.png') no-repeat center;
                 background-size: 16px 16px;
                 transform: rotate(180deg);
             }
